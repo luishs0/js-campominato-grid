@@ -36,7 +36,22 @@ for (let i = 0; i < numbers.length; i++) {
 
         console.log(this.textContent);
     })
+
+    let play = document.getElementById("play");
+
+
+play.addEventListener("click", function() {
+    grid.classList.add("d-flex");
+
+    if (square.classList.contains("blue")) {
+        square.classList.remove("blue");
+        square.classList.remove("color_white");
+    }
+   
+})
 }
+
+
 
 
 

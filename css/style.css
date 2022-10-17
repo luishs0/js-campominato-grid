@@ -34,6 +34,10 @@
     padding: .1rem 1rem;
 }
 
+#play {
+    cursor: pointer;
+}
+
 
 /* MAIN */
 
@@ -53,7 +57,7 @@ main {
     padding-top: 3rem;
     padding-bottom: 3rem;
 
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
 
