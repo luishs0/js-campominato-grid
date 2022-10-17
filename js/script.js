@@ -2,6 +2,9 @@
 
 let numbers = [];
 let rndNumberIn;
+
+let grid = document.querySelector(".grid");
+
 while (numbers.length < 100) {
 
     rndNumberIn = getRndInteger(1, 100);
@@ -13,8 +16,6 @@ while (numbers.length < 100) {
    
 }
 console.log(numbers);
-
-let grid = document.querySelector(".grid");
 
 
 
@@ -29,7 +30,15 @@ for (let i = 0; i < numbers.length; i++) {
 
     grid.append(square);
     
+    square.addEventListener("click", function() {
+        this.classList.add("blue");
+        this.classList.add("color_white");
+
+        console.log(this.textContent);
+    })
 }
+
+
 
 
 
