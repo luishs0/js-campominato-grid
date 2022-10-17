@@ -15,7 +15,6 @@ while (numbers.length < 100) {
 
    
 }
-console.log(numbers);
 
 
 
@@ -40,15 +39,15 @@ for (let i = 0; i < numbers.length; i++) {
     let play = document.getElementById("play");
 
 
-play.addEventListener("click", function() {
-    grid.classList.add("d-flex");
+    play.addEventListener("click", function() {
+        grid.classList.add("d-flex");
 
-    if (square.classList.contains("blue")) {
-        square.classList.remove("blue");
-        square.classList.remove("color_white");
-    }
-   
-})
+        if (square.classList.contains("blue")) {
+            square.classList.remove("blue");
+            square.classList.remove("color_white");
+        }
+    
+    })
 }
 
 
