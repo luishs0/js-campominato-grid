@@ -1,15 +1,33 @@
-// Creare gli squares dentro grid con i numeri random da 1 a 100 all'interno
+
 
 let numbers = [];
-console.log(numbers.length);
+let rndNumberIn;
 while (numbers.length < 100) {
 
-    let rndNumberIn = getRndInteger(1, 100);
+    rndNumberIn = getRndInteger(1, 100);
 
     if (!numbers.includes(rndNumberIn)) {
         numbers.push(rndNumberIn);
     } 
 
+   
+}
+console.log(numbers);
+
+let grid = document.querySelector(".grid");
+
+
+
+
+
+for (let i = 0; i < numbers.length; i++) {
+    
+    let square = document.createElement("div");
+    square.classList.add("square");
+
+    square.innerHTML = numbers[i];
+
+    grid.append(square);
     
 }
 
@@ -24,5 +42,5 @@ while (numbers.length < 100) {
 // FUNCTION
 
 function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min) ) + min;
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
