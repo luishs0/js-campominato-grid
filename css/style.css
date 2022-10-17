@@ -69,6 +69,7 @@ main {
     text-align: center;
     height: calc((100vh - 80px - 50px - 6rem) / 10);
     cursor: pointer;
+    line-height: calc((100vh - 80px - 50px - 6rem) / 10);
 }
 
 
